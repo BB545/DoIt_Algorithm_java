@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df5848f-7369-4949-a8ec-d8b265a20e49" name="Changes" comment="정수 스택 - 클래스, 함수 정의 및 실습">
+      <change afterPath="$PROJECT_DIR$/src/_04_Stack_Queue/IntQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_04_Stack_Queue/IntQueueTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_04_Stack_Queue/practice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IntStackTester.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.binarySearch.executor": "Run",
-    "Application.linearSearch.executor": "Run",
-    "Application.practice.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/hyunh/Desktop/DoIt_Algorithm_java/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IntStackTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.binarySearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.linearSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practice.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/hyunh/Desktop/DoIt_Algorithm_java/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.IntStackTester">
     <configuration name="IntStackTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_04_Stack_Queue.IntStackTester" />
@@ -178,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753109593549</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="정수 스택 - 클래스, 함수 정의 및 실습">
+      <option name="closed" value="true" />
+      <created>1753157966506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753157966506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
