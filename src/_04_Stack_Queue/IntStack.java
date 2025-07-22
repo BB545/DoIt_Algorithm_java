@@ -74,7 +74,7 @@ public class IntStack {
         return max;
     }
 
-    // 7. 스택 크기 반환
+    // 7. 스택 데이터 수 반환
     public int size() {
         return ptr;
     }
