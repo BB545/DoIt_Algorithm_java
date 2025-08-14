@@ -1,7 +1,5 @@
 package _07_Set._LinkedHashSet;
 
-import java.util.List;
-
 public class LinkedHashSet<E> implements Set<E> {
     // 최소 기본 용량 - 비트 연산으로 초기화
     // 1 << 4 -> 1의 2진수 = 0001 -> 왼쪽으로 4칸 이동 = 10000 = 16
@@ -59,9 +57,11 @@ public class LinkedHashSet<E> implements Set<E> {
     }
 
     private E add(int hash, E key) {
-        int idx = hash % table.length;
+        // int idx = hash % table.length;
+        // 인덱싱은 음수가 되면 안 되므로
+        int idx = hash & (table.length - 1);
 
-        Node<E> newNode = new Node<E>(hash, key, null) // 새로운 노드
+        Node<E> newNode = new Node<E>(hash, key, null); // 새로운 노드
 
         if (table[idx] == null) {
             table[idx] = newNode;
@@ -150,7 +150,7 @@ public class LinkedHashSet<E> implements Set<E> {
         if (prevNode == null) {
             head = nextNode;
         } else {
-            nextNode.nextLink = nextNode;
+            prevNode.nextLink = nextNode;
             o.prevLink = null;
         }
 
@@ -289,7 +289,8 @@ public class LinkedHashSet<E> implements Set<E> {
                      * 서로 Capacity가 다를 수 있기 때문에 index에 연결 된 원소를을
                      * 비교하는 것이 아닌 contains로 원소의 존재 여부를 확인
                      */
-                    if(!contains(oTable)) {
+                    // contains는 키를 받도록 설계되어 있기 때문에 oTable.key를 넘겨야 함
+                    if(!contains(oTable.key)) {
                         return false;
                     }
                     oTable = oTable.next;
